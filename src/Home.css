@@ -1,0 +1,167 @@
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddc695;
+}
+
+/* Outer container */
+.home-page .outer {
+  width: 1850px;
+  height: 95vh;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-sizing: border-box;
+}
+
+/* Top bar */
+.home-page .topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 25px;
+  position: relative;
+  color: black;
+}
+
+/* Menu button */
+.home-page .menu-btn {
+  position: absolute;
+  left: 15px;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.home-page .menu-btn img {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  display: block;
+  transition: transform 0.25s ease; /* smooth animation */
+}
+
+/* Grow effect on hover */
+.home-page .menu-btn:hover img {
+  transform: scale(1.15);
+}
+
+/* Slightly larger when active (clicked) */
+.home-page .menu-btn:active img {
+  transform: scale(1.25);
+}
+
+/* Nav tabs */
+.home-page .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  gap: 50px;
+}
+
+.home-page .tab {
+  flex: 1;
+  text-align: center;
+  background: #b9e8b4;
+  border: 4px solid black;
+  border-radius: 50px;
+  padding: 10px 0;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s;
+  max-width: 180px;
+  color: black;
+}
+
+.home-page .tab.active,
+.home-page .tab:hover {
+  background: #69da55;
+  color: black;
+}
+
+/* ✅ Updated Dashboard layout */
+.home-page .dashboard {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Left (6 boxes), Right (CONTACTS) */
+  gap: 25px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+/* Left section layout */
+.home-page .left-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 25px;
+  padding-right: 40px;
+}
+
+
+
+/* Boxes */
+.home-page .box {
+  border: 2px solid black;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 3px;
+  text-transform: uppercase;
+  background: white;
+  font-size: 20px;
+  color: black;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.home-page .green {
+  background: #b9e8b4;
+}
+
+.home-page .red {
+  background: #f59c9c;
+}
+
+/* Right section layout */
+.home-page .right-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contacts box */
+.home-page .contacts-box {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background: #b9e8b4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 3px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: black;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
